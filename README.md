@@ -1,9 +1,6 @@
 <h4 align="center">
-<img src="https://github.com/ValerioMeurerJR/logica-de-programacao/blob/main/dormrm.gif" width="500">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhFJnJJF6UxyQDQX2jv3ihsaV3sW74jhMlZju-toZzQ&s" width="500">
 </h4>
 
-
 # LÓGICA DE PROGRAMAÇÃO
-Essa pastinha é o local onde estarão todos os código das aulas de lógica de programação.
-
-
+Este é o repositório das aulas de lógica de programação do Curso Técnico de Desenvolvimento de Sistemas.
