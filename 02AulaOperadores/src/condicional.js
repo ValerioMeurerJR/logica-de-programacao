@@ -1,6 +1,5 @@
 import leia from "readline-sync"
 // IF ELSE
-/*
 var numero = 10;
 
 if (numero > 0) {
@@ -19,8 +18,8 @@ if (x < 100) {
 if (x < 1000) {
     console.log("Sim x e menor que mil")
 }
-*/
-var codigoErro = leia.questionInt("Informe o erro: ");
+
+/* var codigoErro = leia.questionInt("Informe o erro: ");
 
 switch (codigoErro) {
     case 400:
@@ -36,5 +35,6 @@ switch (codigoErro) {
     default:
         console.log("NÃO TEM ERRO")
         break;
-}
+} */
+
 
