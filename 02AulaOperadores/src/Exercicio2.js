@@ -1,4 +1,4 @@
-import leia from "readline-sync"
+import leia, { question, questionInt } from "readline-sync"
 
 function Emprestimo() {
     var Valoremprestimo = leia.questionFloat("INFORME O VALOR DO EMPRESTIMO R$: ");
@@ -102,7 +102,6 @@ function Doacao() {
             console.log("Opção invalida.")
     }
 }
-Partida()
 function Partida() {
     var timeA = leia.questionInt("INFORME A QNT GOLS TIME A: ");
     var timeB = leia.questionInt("INFORME A QNT GOLS TIME B: ");
@@ -119,5 +118,23 @@ function Partida() {
         default:
             console.log("GOLEADA");
             break;
+    }
+}
+Idade()
+function Idade() {
+    var idade = leia.questionInt("INFORM A IDADE: ");
+    if (idade < 18) {
+        var permissao = questionInt("SEUS PAIS PERMITIRAM A VIAGEM: \n 1 - SIM\n 2 - NAO\n")
+        if (permissao === 1) {
+            var nome = leia.question("INFORME SEU NOME: ")
+            console.log("VOCE PODE VIAJAR TRANQUILO ".nome)
+        } else if (permissao === 2) {
+            console.log("NAO TEM PERMISSAO PARA VIAJAR  ")
+        } else {
+            console.log("OPCAO INVALIDA")
+        }
+    } else {
+        var nome = leia.question("INFORME SEU NOME: ")
+        console.log("VOCE PODE VIAJAR TRANQUILO ".nome)
     }
 }
