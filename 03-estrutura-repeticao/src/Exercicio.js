@@ -13,6 +13,8 @@ console.log("5");
 console.log("6");
 console.log("7");
 console.log("8");
+console.log("9");
+console.log("10");
 console.log("Sair");
 var Opcao = Number(leia.prompt())
 console.log("")
@@ -41,6 +43,12 @@ switch (Opcao) {
     case 8:
         Atividade8()
         break;
+    case 9:
+        Atividade9()
+        break;
+    case 10:
+        Atividade10()
+        break;
     default:
         console.log("Voce escolheu sair");
         break;
@@ -66,9 +74,9 @@ function Atividade3() {
     }
 }
 function Atividade4() {
-    for (var i = 1; i <= 15; i++){
+    for (var i = 0; i <= 15; i++){
         var Valor = leia.questionInt("Informe " + i + ": ")
-        if(i == 1){
+        if(i == 0){
             var maior = Valor;
             var menor = Valor;
         }
@@ -109,7 +117,7 @@ function Atividade7() {
 function Atividade8() {
     var par = 1;
     var impar = 0;
-    for (let i = 0; i <= 6; i++) {        
+    for (let i = 0; i < 6; i++) {        
         var numero = leia.questionInt("INFORME NUMERO: ");
         if (i % 2 === 0) {
             par *= numero;
@@ -119,4 +127,31 @@ function Atividade8() {
     }
     console.log("PAR: " + par)
     console.log("IMPAR: " + impar)    
+}
+
+function Atividade9() {
+    var contador = 0 
+    do {
+        var num = leia.questionInt("INFORME UM NUMERO: ");
+        if(num > 100 && num < 200){
+            contador++
+        }
+    } while(num !== 0);
+    console.log("FORAM DIGITATO " + contador + " ENTRE 100 E 200")
+
+}
+function Atividade10() {
+    var Valentina = 1.50;
+    var Joao = 1.40;
+    var ano=0;
+    while(Valentina >= Joao ){
+        Valentina += 0.02
+        Joao += 0.03
+        ano ++
+        
+    }
+    console.log("Valentina " + Valentina.toFixed(2))
+    console.log("Joao " + Joao.toFixed(2))
+    console.log("DEMORA " + ano + " PARA JOAO FICAR MAIOR QUE VALENTINA")
+    
 }
