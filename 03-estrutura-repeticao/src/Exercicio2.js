@@ -109,7 +109,7 @@ function Atividade2(){
     var enquanto = true
     while(enquanto){
         cont++;
-        valor = leia.questionInt("INFORME O NUMERO: ");
+        valor = leia.questionInt("DIGITE O PALPITE: ");
         if(valor != NMagico){
             if(valor < NMagico){
                 console.log("O NUMERO INFORMADO E MENOR QUE O NUMERO MAGICO");
@@ -154,9 +154,8 @@ function Atividade5(){
     var Binario = ""
     do{
         Binario = (numero % 2) + Binario 
-        console.log(numero)
-        numero =  Math.floor(numero / 2 )   
-    } while (numero !== 1)
+        numero =  parseInt(numero / 2 )   
+    } while (numero >= 1)
         Binario = numero + Binario 
         console.log(Binario)
 }
